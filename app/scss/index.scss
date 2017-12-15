@@ -1,0 +1,255 @@
+
+//固定的导航条会遮住页面上的其它内容
+.mScroll:hover {
+  cursor: pointer;
+}
+
+.section {
+  padding-top: 0.01rem;
+  padding-bottom: 0.75em;
+  h1 {
+    margin-top: $section-margin-top;
+  }
+}
+
+// 导航页
+.navbar{
+  border-bottom:1px solid $border-color;
+  //background:white;
+  background:rgba(255,255,255,0.95);
+
+  .navbar-brand{
+   /* .fa{
+      padding-right: 10px;
+      color:$info;
+    }*/
+
+    img{
+      display: inline-block;
+      width:1.8em;
+      height:1.8em;
+    }
+  }
+
+}
+
+#exCollapsingNavbar{
+  border-bottom:1px solid $border-color;
+  position: fixed;
+  width: 100%;
+  background:white;
+  z-index: 1;
+  top:3.3em;
+  ul{
+    margin:0.5rem 0;
+    padding:0;
+    li{
+      list-style-type: none;
+      line-height:2em;
+      margin-left: 0;
+      padding-left: 2em;
+
+      a{
+        color:rgba(0,0,0,.3);
+
+        &:hover{
+          color:rgba(0,0,0,.6);
+          text-decoration: none;
+          transition:all 0.5s;
+        }
+
+        &:active{
+          color:rgba(0,0,0,.8);
+        }
+      }
+    }
+  }
+}
+
+
+//样式
+#container {
+  position: relative;
+  min-height: 200px;
+}
+
+#container img {
+  position: absolute;
+  cursor: pointer;
+  opacity: .6;
+  display: none;
+  transition-duration: 0.5s;
+  margin-top: 3rem;
+}
+
+//个人简历
+.profile {
+  font-size: 0.875rem;
+  position: relative;
+  margin-top: 70px;
+
+  .left-info {
+    //    border-right:2px dashed #ccc;
+    i {
+      color: $icon-blue;
+    }
+  }
+  .personImg {
+    left: 50%;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding:5px;
+    overflow: hidden;
+    margin: 0 0 0 -80px;
+    top: 0px;
+  }
+
+  // 下面说明
+  .card-deck-wrapper{
+    margin-top: 0.75rem;
+    align-items: center;
+    justify-content: center;
+
+    h6{
+      margin:0.5rem;
+    }
+  }
+
+  .right-info {
+
+    .media{
+      margin-bottom: 0;
+
+      .media-body{
+        font-size:16px;
+      }
+    }
+
+    .xiaohui {
+      height: 9rem;
+      width: 9rem;
+    }
+  }
+
+
+  @media screen and (max-width: $screen-sm-max) {
+    .personImg {
+      width: 120px;
+      height: 120px;
+      margin: 0;
+      left: auto;
+      right: 0;
+      padding-right: 15px;
+      top:-0.5rem;
+
+    }
+  }
+
+
+
+}
+
+//专业技能  项目经验
+.professional, .project {
+  background: $bg-gray;
+}
+
+.professional{
+  .row{
+    div:first-child{
+      small{
+        color:$danger;
+      }
+    }
+  }
+
+  ol>li{
+    font-size:1rem !important;
+  }
+
+}
+
+.project {
+
+  .label{
+    font-size:65%;
+  }
+
+  .hidden-sm-up {
+    .label{
+      margin-left: 0 !important;
+    }
+  }
+
+  .bs-callout {
+    background: #fff;
+    width:100%;
+
+  }
+
+  .projectImg {
+    border-radius: 50%;
+    display: inline-block;
+    height: $circleImg-height;
+    width: $circleImg-height;
+    font-size: $circleImg-height/2;
+    line-height: $circleImg-height+5;
+    color: white;
+    text-align: center;
+    transition: all .5s ease 0s;
+  }
+
+  img{
+    height:8em;
+    width:8em;
+  }
+
+  .projectImg:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  .media-body {
+    .label {
+      margin-left: 5px;
+    }
+    p {
+      padding-right: $media-body-right;
+    }
+
+    .visible-xs-block {
+      margin-bottom: 5px;
+      .label:first-child {
+        margin-left: 0px;
+      }
+    }
+  }
+
+  .media-heading .label:first-child {
+    margin-right: $media-body-right;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

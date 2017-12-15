@@ -1,0 +1,30 @@
+html{
+  //font-size:16px;
+}
+body {
+  //padding-top: 70px;
+  font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"source-han-sans-simplified-c","Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",sans-serif;
+  position: relative;
+}
+
+a{
+  transition: all 0.5s;
+
+  &:hover{
+  }
+
+}
+
+.common-title{
+  padding-bottom: 1rem;
+  h1{
+    color:$warning;
+  }
+  p{
+    color:$info;
+  }
+}
+
+.popover{
+  font-size:1rem;
+}

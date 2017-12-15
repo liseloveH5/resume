@@ -1,0 +1,18 @@
+@mixin bs-callout-common($color) {
+  border-left-color: $color;
+
+  a{
+    color:$color;
+
+    &:hover{
+      color:darken($color,0.1);
+    }
+  }
+
+  h4{
+    color: $color;
+  }
+  .projectImg{
+    background: $color;
+  }
+}

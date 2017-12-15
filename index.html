@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>个人简历</title>
+    <link rel="shortcut icon" href="./favicon.ico"/>
+    <link rel="bookmark" href="./favicon.ico"/>
+
+    <!--引用bootstrap样式-->
+    <link rel="stylesheet" href="./app/css/bootstrap.min.css"/>
+    <!--自定义样式-->
+    <link rel="stylesheet" href="./app/css/main.css"/>
+    <!--字体图标-->
+    <link href="http://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.css" rel="stylesheet">
+    <!--页面加载样式-->
+    <link rel="stylesheet" href="./sea-modules/pace/css/pace-theme-corner-indicator.tmpl.css"/>
+    <!--页面加载-->
+    <script src="http://cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+
+</head>
+<body data-spy="scroll" data-target=".navbar-example">
+
+
+<nav class="navbar-example navbar navbar-light navbar-fixed-top" >
+    <div class="container">
+        <a class="navbar-brand">
+            <img src="app/images/tamkero3.png" alt="">
+            杜雨晴
+            <small>(web前端工程师)</small>
+        </a>
+        <div class="collapse navbar-toggleable-xs">
+            <ul class="nav navbar-nav pull-sm-right">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#profile">个人简介</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#professional">专业技能</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#workExperience">工作经历</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#project">项目经验</a>
+                </li>
+            </ul>
+        </div>
+
+        <button class="navbar-toggler pull-right hidden-sm-up" type="button" data-toggle="collapse"
+                data-target="#exCollapsingNavbar">
+            <span class="fa fa-bars text-primary"></span>
+        </button>
+    </div>
+</nav>
+
+<!-- 手机端折叠区域-->
+<div class="collapse " id="exCollapsingNavbar">
+    <ul class="nav navbar-nav">
+        <li>
+            <a href="#profile">个人简介</a>
+        </li>
+        <li>
+            <a href="#professional">专业技能</a>
+        </li>
+        <li>
+            <a href="#workExperience">工作经历</a>
+        </li>
+        <li>
+            <a href="#project">项目经验</a>
+        </li>
+    </ul>
+</div>
+
+<!--为了锚点定位-->
+<!--<div id="profile" style="position: absolute;top:0;"></div>-->
+<!--个人简介-->
+<div class="profile container" id="profile" data-offset-top="100px">
+    <div class="hidden-md-up common-title" >
+        <h1 class="">个人简介</h1>
+        <p class="lead">办法总比困难多</p>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <!--在手机等小屏幕中隐藏-->
+    <div id="container" class="hidden-sm-down">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-1  ">
+                    <img src="./app/images/ge.png" width="60" height="60" alt="个">
+                </div>
+
+                <div class="col-md-1">
+                    <img src="./app/images/ren.png" width="60" height="60" alt="人">
+                </div>
+
+                <div class="col-md-offset-3 col-md-1">
+                    <img src="./app/images/jian.png" width="60" height="60" alt="简">
+                </div>
+                <div class="col-md-1">
+                    <img src="./app/images/jie.png" width="60" height="60" alt="介">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="personImg">
+        <img src="app/images/wo.jpg" class="img-thumbnail no-spinning">
+    </div>
+
+    <!--个人简历 card-->
+    <div class="card-deck-wrapper">
+        <div class="card-deck ">
+            <div class="card left-info">
+                <div class="card-block">
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6"><h6>姓名： 杜雨晴</h6></div>
+                        <div class="col-xs-12 col-sm-12 col-md-6"><h6>性别： 女</h6></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6"><h6>出生日期：1990/10/11</h6></div>
+                        <div class="col-xs-12 col-sm-12 col-md-6"><h6>籍贯：湖北武汉</h6></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6"><h6>求职岗位：web前端工程师</h6></div>
+                        <div class="col-xs-12 col-sm-12 col-md-6"><h6>兴趣爱好：摄影 户外</h6></div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6"><h6>
+                            <i class="fa fa-qq"></i>：<span class="text-danger">1403726672</span></h6></div>
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                            <h6><i class="fa fa-phone"></i>：
+                                <span class="text-danger" id="phone">15827030055</span>
+                            </h6>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h6><i class="fa fa-envelope-o "></i>：
+                            <span
+                                    class="text-danger">duyuqing.2009@163.com</span>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-block right-info">
+
+                    <div class="media">
+                        <div class="media-body media-middle">
+                                2008年9月至2012年6月在<code>江汉大学</code>修读<code>教育技术学（媒体技术方向）</code>专业，取得<code>英语六级</code>证书，最后获取<code>学士学位</code>。
+                        </div>
+                        <!--<div class="media-right media-middle">
+                            <img src="app/images/xiaohui.jpg" class="xiaohui" class="img-circle">
+                        </div>-->
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--为了锚点定位-->
+    <div id="professional"></div>
+</div>
+</div>
+
+<!--专业技能-->
+<div i class="professional section">
+    <div class="container">
+
+        <div class="common-title">
+            <h1>专业技能</h1>
+            <p class="lead">学而不思则罔 思而不学则殆</p>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-3">
+                <h4>HTML & CSS <small>(80)</small></h4>
+            </div>
+            <div class="col-xs-12 col-sm-9">
+                <progress class="progress  progress-success progress-striped progress-animated"
+                          value="80"
+                          max="100"
+                          data-toggle="popover"
+                          data-content="<ol>
+                                    <li>熟练掌握<code>HTML(5)</code>、<code>CSS(3)</code>，并具有一定的页面审美意识。</li>
+                                    <li>配合美工将草图形成可产品化的设计，并快速将<code>PSD</code>构思转化为<code>HTML</code>代码。</li>
+                                    <li>对各位浏览器的兼容性有一定的认识，并具有相关问题的解决经验。在这个飞速进步的年代，希望不要再兼容ie8 /(ㄒoㄒ)/~~</li>
+                                    <li>能使用<code>bootstrap</code>和<code>sass</code>完成项目，对前沿前端技术保持强烈的好奇心。</li>
+                                    <li>有丰富的移动端开发经验。接触过像<code>mint ui</code>和<code>mui</code>前端样式库。</li>
+                                </ol>">
+                </progress>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-3">
+                <h4>Javascript <small>(70)</small></h4>
+            </div>
+            <div class="col-xs-12 col-sm-9">
+                <progress class="progress progress-striped progress-animated"
+                          value="70"
+                          max="100"
+                          data-toggle="popover"
+                          data-content="<ol>
+                                    <li>熟练使用<code>jquery</code>，熟悉使用<code>Vuejs</code>。</li>
+                                    <li>近期喜欢函数式编程库<code>lodash</code>。</li>
+                                    <li>对原生<code>javascript</code>,<code>es6</code>有一定的掌握。</li>
+                                    <li>热爱开源组织，擅长在<code>github</code>上寻找开源项目并使用在项目中。</li>
+                                    <li>用过<code>webpack</code>配合<code>babel</code>模块化方式开发代码。</li>
+                                    <li>擅长用<code>gulp</code>配置任务,进行可持续性的开发页面。</li>
+                                </ol>">
+                </progress>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-3">
+                <h4>VueJS <small>(60)</small></h4>
+            </div>
+            <div class="col-xs-12 col-sm-9">
+                <progress class="progress progress-info progress-striped progress-animated"
+                          value="55"
+                          max="100"
+                          data-toggle="popover"
+                          data-content="<ol>
+                                     <li>掌握<code>面向对象</code>编程。</li>
+                                     <li>熟悉使用Vue开源项目（<code>element</code>、<code>Vux </code>和<code>mint-ui  </code>）。</li>
+                                     <li>了解过函数式语言。</li>
+                                     <li>使用VueJS开发<code>商城大型项目</code>。</li>
+                                </ol>">
+                </progress>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-3">
+                <h4>Sass/Less <small>(60)</small></h4>
+            </div>
+            <div class="col-xs-12 col-sm-9">
+                <progress class="progress progress-warning progress-striped progress-animated"
+                          value="60"
+                          max="100"
+                          data-toggle="popover"
+                          data-content="<ol>
+                                     <li>熟悉掌握基本的<code>Sass/Less</code>语法。</li>
+                                     <li>使用过<code>Sass/Less</code>开发项目。</li>
+                                     <li>希望能更灵活的利用函数思想模块化样式代码，提高浏览器代码解析效率</code>。</li>
+                                </ol>">
+                </progress>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-3">
+                <h4>Axsure RP & PS <small>(20)</small></h4>
+            </div>
+            <div class="col-xs-12 col-sm-9">
+                <progress class="progress progress-danger progress-striped progress-animated"
+                          value="20"
+                          max="100"
+                          data-toggle="popover"
+                          data-content="<ol>
+                                     <li>使用过<code>Axsure RP</code>进行项目原型设计。</li>
+                                     <li>熟练切图技能</li>
+                                     <li>能进行简单的图片处理。</li>
+                                     <li>配合gulp命令将小图标整合为雪碧图。</li>
+                                </ol>">
+                </progress>
+            </div>
+        </div>
+    </div>
+    <!--为了锚点定位-->
+    <div id="workExperience"></div>
+</div>
+
+<!--工作经历-->
+<div class="workExperience section">
+    <div class="container">
+        <div class="common-title">
+            <h1>工作经历</h1>
+            <p class="lead">经历了 才能成长</p>
+        </div>
+
+        <ul class="cbp_tmtimeline">
+            <!--目前工作 2016/02 -->
+            <li>
+                <time class="cbp_tmtime" datetime="2016-02-01"><span>2016/02</span></time>
+                <!--<div class="cbp_tmicon cbp_tmicon-phone"></div>-->
+                <div class="fa fa-book"></div>
+                <div class="cbp_tmlabel">
+                    <h2>目前
+                        <small>武汉卓尔云市</small>
+                    </h2>
+                    <p>
+                        <ul>
+                            <li>卓尔购微信商城H5页面实现UI页面开发，通过vuejs框架完成业务逻辑，数据接入；</li>
+                            <li>根据产品经理需求进行页面升级迭代；</li>
+                            <li>协助业务团队，执行编写rap接口字段规范、用户体验等相关的技术文档；</li>
+                            <li>使用bootstrap后台模版完成卓尔购、卓集送及相关业务的PC页面制作；</li>
+                            <li>网站页面代码优化，封装组件，模块化代码；</li>
+                            <li>每月项目代码review，技术分享周计划；</li>
+                            <li>参与业务需求会议，用例讨论会议，日清bug数量</li>
+                        </ul>
+                    </p>
+                </div>
+
+            </li>
+            <!--第一份职业 2012/08-2015/12 -->
+            <li>
+                <time class="cbp_tmtime" datetime="2012-08-01"><span>2012/08</span></time>
+                <div class="fa fa-graduation-cap"></div>
+                <div class="cbp_tmlabel">
+                    <h2>毕业&入职
+                        <small>武汉钢铁集团</small>
+                    </h2>
+                    <p>
+                        <ul>
+                            <li>主流程的页面设计与制作；</li>
+                            <li>网站的前端页面优化；</li>
+                            <li>协助业务部门，执行编写页面制作、优化、用户体验等相关的技术文档；</li>
+                            <li>提供业务流程的需求文档；与后台开发协调，提出修改意见。</li>
+                        </ul>
+                    </p>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+    <!--为了锚点定位-->
+    <div id="project"></div>
+</div>
+
+
+<!--项目经验-->
+<div class="project section">
+    <div class="container">
+
+
+        <div class="common-title">
+            <h1>项目经验</h1>
+            <p class="lead">积累 是最伟大的财富</p>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="bs-callout bs-callout-default ">
+                    <div class="media">
+                        <div class="media-body">
+                            <h4 class="media-heading">vue卓尔购活动单页
+                                <div class="hidden-xs-down pull-right">
+                                    <span class="label label-primary pull-right">sass</span>
+                                    <span class="label label-success pull-right">webpack</span>
+                                    <span class="label label-info pull-right">vuejs</span>
+                                    <span class="label label-success pull-right">vue-router</span>
+                                </div>
+                            </h4>
+
+                            <h4 class="hidden-sm-up">
+                                <span class="label label-primary ">sass</span>
+                                <span class="label label-success ">webpack</span>
+                                <span class="label label-info ">vuejs</span>
+                                <span class="label label-success ">vue-router</span>
+                            </h4>
+
+                            <div class="clearfix"></div>
+                            <p>
+                                <ul>
+                                    <li>S：为自身具备一定加工能力但加工能力有所不足或自身不具备窗帘加工能力的商户，该项目在整体业务中提供集货、分单、交易过程跟踪管理、网上交易下单平台。</li>
+                                    <li>T：项目包含后台配置、前台入口页、APP业务改造、卖家版加工单管理几个开发板块</li>
+                                    <li>A： 用bootstrap、layer.js技术完成加工单管理的后台PC页面制作;H5项目框架选型，基于vue2.0 + es6 + vue-router + vuex + scss + webpack卖家业务框架搭建，实现UI界面开发，完成窗帘加工确认收货H5单页制作，功能包含下拉加载、订单列表展示、基于vue的axios异步请求、错误信息提示、空态页展示。实现工具包括loadash、jQuery、mintUI组件</li>
+                                    <li>R：UAT后，项目于17年8月上线</li>
+                                </ul>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="bs-callout bs-callout-default ">
+                    <div class="media">
+
+                        <div class="media-body">
+                            <h4 class="media-heading">卓付通微信小程序
+                                <div class="hidden-xs-down pull-right">
+                                    <span class="label label-success pull-right">lodash</span>
+                                    <span class="label label-warning pull-right">less</span>
+                                    <span class="label label-primary pull-right">wepy</span>
+                                </div>
+                            </h4>
+
+                            <h4 class="hidden-sm-up">
+                                <span class="label label-success ">lodash</span>
+                                <span class="label label-warning ">less</span>
+                                <span class="label label-primary ">wepy</span>
+                            </h4>
+
+                            <div class="clearfix"></div>
+
+                            <p>
+                            <ul>
+                                <li>S：为卓尔购意向发展微信业务的零售商户提供便捷的微信交易平台，利用微信平台完成独立店铺线上交易</li>
+                                <li>T：项目包含店铺首页、商品列表、购物车、结算单、个人中心、登录几个模块</li>
+                                <li>A：小程序UI框架选型，wepy框架+less搭建，实现UI界面开发，完成个人中心和商品列表模块</li>
+                                <li>R：已发布正式版本，商家使用中</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="media-right media-middle">
+                            <a>
+                                <img src="app/images/wx.jpg" alt="店铺小程序">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="bs-callout bs-callout-default ">
+                    <div class="media">
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <a href="http://t.cn/R9CLRxa" target="_blank">卓尔云市电视墙</a>
+                                <div class="hidden-xs-down pull-right">
+                                    <span class="label label-primary pull-right">html5/css3</span>
+                                    <span class="label label-success pull-right">bootstrap</span>
+                                    <span class="label label-info pull-right">jquery</span>
+                                    <span class="label label-warning pull-right">less</span>
+                                </div>
+                            </h4>
+                            <h4 class="hidden-sm-up">
+                                <span class="label label-primary ">html5/css3</span>
+                                <span class="label label-success ">bootstrap</span>
+                                <span class="label label-info ">jquery</span>
+                                <span class="label label-warning ">less</span>
+                            </h4>
+
+                            <div class="clearfix"></div>
+                            <p>
+                                <ul>
+                                    <li>S：电视墙项目是用直观可视化的数据图表展示实时的公司业务数据，配合公司高层管理者向客户介绍公司业务取得的成绩。</li>
+                                    <li>T：基于动态更新数据的需求，并兼容各尺寸电视屏幕，使用H5页面形式制作。</li>
+                                    <li>A：平台使用echart+jquery+scss+browsersync等技术搭建，模块化封装图表组件，轮播形式动态读取各业务线代码，在各尺寸电视屏幕能正常显示。</li>
+                                    <li>R：已发布正式版本，展示中</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="bs-callout bs-callout-default ">
+                    <div class="media">
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <a href="http://t.cn/RfNCzn5" target="_blank">vue卓尔购微信商城H5页面</a>
+
+                                <div class="hidden-xs-down pull-right">
+                                    <span class="label label-success pull-right">es2016</span>
+                                    <span class="label label-info pull-right">babel</span>
+                                    <span class="label label-warning pull-right">webpack</span>
+                                    <span class="label label-primary pull-right">mint ui</span>
+                                    <span class="label label-info pull-right">vuejs</span>
+                                </div>
+                            </h4>
+
+                            <h4 class="hidden-sm-up">
+                                <span class="label label-success ">es2016</span>
+                                <span class="label label-info ">babel</span>
+                                <span class="label label-warning ">webpack</span>
+                                <span class="label label-primary ">mint ui</span>
+                                <span class="label label-info ">vuejs</span>
+                            </h4>
+
+                            <div class="clearfix"></div>
+
+                            <p>
+                                <ul>
+                                    <li>S：公司核心业务的H5版本。为卓尔购用户提供线上商品交易，集成向店铺支付，大宗商品交易、校园分销、超市专区等功能</li>
+                                    <li>T：店铺首页、商品列表、购物车、结算单、个人中心、登录等购物流程打通，完成各个模块产品需求业务迭代</li>
+                                    <li>A：基于vue1.0 + vue-router + scss + webpack搭建平台，实现工具包括loadash、vuxUI、echart组件，完成业务逻辑，进行模块封装、组件化；负责大宗模块业务，主流程首页、搜索、个人中心、购物车模块，超市专区商品列表模块、领券用券业务。</li>
+                                    <li>R：已发布正式版本，使用中</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="media-right media-middle">
+                            <a>
+                                <img src="app/images/wxH5.png" alt="卓尔购微信商城">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="bs-callout bs-callout-default ">
+                    <div class="media">
+
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <a >湖北省环保厅内部信息管理系统</a>
+                                <div class="hidden-xs-down pull-right">
+                                    <span class="label label-primary pull-right">html5/css3</span>
+                                    <span class="label label-success pull-right">bootstrap</span>
+                                    <span class="label label-info pull-right">seajs</span>
+                                    <span class="label label-warning pull-right">less</span>
+                                </div>
+                            </h4>
+
+                            <h4 class="hidden-sm-up ">
+                                <span class="label label-primary ">html5/css3</span>
+                                <span class="label label-success ">bootstrap</span>
+                                <span class="label label-info ">seajs</span>
+                                <span class="label label-warning ">less</span>
+                            </h4>
+
+                            <div class="clearfix"></div>
+                            <p>
+                                <ul>
+                                    <li>S：湖北省环保厅内部信息管理系统设计和开发的后台系统，为该单位的办公信息化提供高效便捷的解决方案。</li>
+                                    <li>T：具有采集数据，发布公文消息，文件共享，人员信息管理，报名培训，会议安排等功能</li>
+                                    <li>A：该项目基于bootstrap框架+css3搭建前端平台；工作内容包括基本组件的改造，表单验证处理，自定义主题，前端页面的动效交互；</li>
+                                    <li>T：项目已上线，内部使用中</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<!--增加百度站长统计-->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?0f1815eb7dce4167b5c7c791141a8e64";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+<script src="http://cdn.bootcss.com/tether/1.1.1/js/tether.min.js"></script>
+
+<!-- 增加思源雅黑 字体  -->
+<!--<script src="https://use.typekit.net/qfn8nhn.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>-->
+
+
+<!--  公共页面js -->
+<script src="http://cdn.bootcss.com/require.js/2.1.22/require.min.js"></script>
+<script src="./app/js/config.js"></script>
+<script src="./app/js/index.js"></script>
+
+
+</body>
+
+
+</html>

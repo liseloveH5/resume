@@ -1,0 +1,1 @@
+requirejs(['jquery','bootstrap','tether','main','spinning'],function($,bootstrap){});

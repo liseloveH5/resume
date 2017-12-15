@@ -1,0 +1,65 @@
+
+$progressbar-height:30px;
+
+.bs-callout {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #eee;
+  border-image: none;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px 1px 1px 5px;
+  margin: 5px 0;
+  padding: 20px;
+}
+
+
+
+
+
+.bs-callout-primary {
+  @include bs-callout-common($primary);
+}
+.bs-callout-success {
+  @include bs-callout-common($success);
+}
+.bs-callout-info {
+  @include bs-callout-common($info);
+}
+.bs-callout-warning {
+  @include bs-callout-common($warning);
+}
+.bs-callout-danger {
+  @include bs-callout-common($danger);
+}
+.bs-callout-default {
+  @include bs-callout-common($gray-light);
+}
+
+
+
+
+
+//进度条样式
+.progress{
+  height:$progressbar-height;
+}
+
+.progress-bar{
+  line-height:$progressbar-height;
+  font-size:22px;
+}
+
+//弹出框
+.popover{
+  max-width: 512px;
+  .popover-content{
+    padding:10px 0 0 0;
+    li{
+      padding-right:10px;
+    }
+  }
+}
+
